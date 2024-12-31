@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), /* 半透明白色疊加層 */
+    url(../image/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.5)
+    
+    }
+#top{
+    background-color: rgb(34, 111, 182);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+}
+#top ul{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+#top ul li{
+    display: inline-block;
+}
+#top ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    background-color: 0.3s;
+    
+}
+#top ul li a:hover{
+    color:rgb(255, 233, 34);
+}
+#top ul li.active a{
+    background-color: rgba(255, 255, 255, 0.891);
+    color: black;
+    border-radius: 5px;
+}
+#home{
+    min-height: 100vh; 
+    background-image: url(../image/1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* 使文字垂直排列 */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(1, 18, 129);
+    padding: 0;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4); /* 透明的白色背景 */
+    z-index: 0;
+}
+#home h1, #home p {
+    z-index: 1;
+    margin: 10px 0; /* 每段文字上下有間隔 */
+    padding: 10px;  /* 給文字一些內邊距 */
+    background-color: rgba(255, 255, 255, 0.6); /* 文字後方背景為透明白色 */
+    border-radius: 10px; /* 邊角圓滑 */
+    line-height: 1.5; /* 行間距 */
+    font-size: 1.5rem; /* 可以調整字體大小 */
+    font-weight: bold;
+}
+#home h1 {
+    font-size: 3rem; 
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明背景，讓背景圖片依然可見 */
+    padding: 40px;
+    max-width: 100%; /* 讓容器寬度最大化 */
+    width: 100%;
+    height: 100%; /* 讓容器的高度也是滿版的 */
+    box-sizing: border-box; /* 確保內邊距和邊框不會超過容器邊界 */
+    text-align: center; /* 讓文字居中 */
+    color: black; /* 設置文字顏色 */
+    z-index: 1; /* 確保內容不被背景擋住 */
+    font-size: 1.5rem;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.intro-text img {
+    width: 150px; /* 縮小圖片大小 */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+.intro-text {
+    line-height: 1.6;
+}
+.container h1 {
+    font-size: 3rem; /* 設置標題字體大小 */
+    font-weight: bold;
+    margin-bottom: 20px; /* 增加標題與內容的間距 */
+    text-align: center;
+}
